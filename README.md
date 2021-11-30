@@ -4,7 +4,7 @@ PlushCV
 A **one-page**, **two asymmetric column** resume template in **XeTeX** that caters particularly to  Computer Science students.
 Has a bunch of font options as listed in Preview. Inspired by [**deedy-resume**](https://github.com/deedy/Deedy-Resume). 
 
-Easiest way to create your own is to use the Overleaf template (coming soon) linked below to edit and compile. 
+Easiest way to create your own is to use the [Overleaf template](https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf) to edit and compile. 
 
 All fonts used are free and open source.
 
@@ -15,7 +15,7 @@ All fonts used are free and open source.
 ## Availability
 
 1. Direct download.
-2. **Overleaf**.com (coming soon)
+2. [**Overleaf**.com template](https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf)
 
 ## Previews
 
