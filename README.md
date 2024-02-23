@@ -1,7 +1,7 @@
 PlushCV
 =========================
 
-Note: A new ATS-friendly template has been published at [**AustereCV**](https://github.com/sansquoi/AustereCV).
+Author's Note: A new ATS-friendly template has been published at [**AustereCV**](https://github.com/sansquoi/AustereCV).
 
 A **one-page**, **two asymmetric column** resume template in **XeTeX** that caters particularly to  Computer Science students.
 Has a bunch of font options as listed in Preview. Inspired by [**deedy-resume**](https://github.com/deedy/Deedy-Resume). 
