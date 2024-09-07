@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PlushCV - One Page Two Column Resume
 % LaTeX Template
-% Version 1.0 (11/28/2021)
+% Version 2.0 (9/07/2024)
 %
 % Author:
-% Shubham Mazumder (http://mazumder.me)
+% Shubham Mazumder (http://shubh.ink)
 %
-% Hacked together from:
+% Hacked from:
 % https://github.com/deedydas/Deedy-Resume
 %
 % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
@@ -15,25 +15,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
 % TODO:
-% 1. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add more icon options 
-% 4. Fix hacky left alignment on contact line
-% 5. Remove Hacky fix for awkward extra vertical space
+% 1. Fix hacky left alignment on contact line
+% 2. Remove Hacky fix for awkward extra vertical space
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
+% 1. Used paracol to fix multiple-page flow.
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the vertical limit.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%Icons:
 %%Main: https://icons8.com/icons/carbon-copy
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{plushcv}
+\usepackage{paracol}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -55,8 +51,10 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.70\textwidth} 
+\columnratio{0.70}
+\begin{paracol}{2}
 
+\switchcolumn[0]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -139,9 +137,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\switchcolumn[1]
 \hfill
-\begin{minipage}[t]{0.25\textwidth} 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -247,6 +245,6 @@ School of Computing \\
 % Scripting Languages and Web Tech \textbullet{}\\
 % Software Engineering \\
 
-\end{minipage} 
+\end{paracol}
 \end{document}  \documentclass[]{article}
 
