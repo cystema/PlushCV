@@ -213,11 +213,11 @@ Last Updated on \today
 %Contact Line
 \newcommand{\contactline}[5]{\begingroup
 \setbox0=\hbox{
-\includegraphics[scale=0.23,trim={1.4cm 1.25cm -0.4cm 0cm}]{icons/main/home.png}{#1}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#4}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#5}
+\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/home-simple.png}  {#1}\hspace{0.3cm}
+\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/github-circle.png} {#2}\hspace{0.3cm}
+\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/linkedin.png} {#3}\hspace{0.3cm}
+\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/mail.png} {#4}\hspace{0.3cm}
+\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/phone-income.png} {#5}
 }\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo
