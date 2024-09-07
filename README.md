@@ -19,15 +19,11 @@ All fonts used are free and open source.
 1. Direct download.
 2. [**Overleaf**.com template](https://www.overleaf.com/latex/templates/plushcv/jybpnsftmdkf)
 
-## Previews
-
-**Merriweather**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-merriweather-sample.png)
+## Preview
 
 **Source Sans Pro**
 
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-sourcesanspro-sample.png)
+![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/preview_sourcesanspro.png)
 
 ## Changelog
 
