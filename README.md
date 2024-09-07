@@ -25,37 +25,9 @@ All fonts used are free and open source.
 
 ![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-merriweather-sample.png)
 
-**Source Serif Pro**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-sourceserifpro-sample.png)
-
-**Inter**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-inter-sample.png)
-
-**Office Code Pro**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-officecodeprod-sample.png)
-
-**Oxygen**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-oxygen-sample.png)
-
-**Prata**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-prata-sample.png)
-
 **Source Sans Pro**
 
 ![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-sourcesanspro-sample.png)
-
-**Marcellus**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-marcellus-sample.png)
-
-**Abril**
-
-![alt tag](https://github.com/cystema/PlushCV/blob/main/previews/plushcv-abril-sample.png)
 
 ## Changelog
 
