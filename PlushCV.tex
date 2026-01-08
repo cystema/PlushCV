@@ -21,8 +21,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
-% 1. Split the header to two column format, added relevant icons to contact info.
-% 2. Used paracol to fix multiple-page flow.
+% 1. Added command for references.
+% 2. Split the header to two column format, added relevant icons to contact info.
+% 3. Used paracol to fix multiple-page flow.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%Icons: fontawesome5 package
@@ -192,35 +193,20 @@ School of Computing \\
 % %     REFERENCES
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{References} 
-\href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
-}
-\parbox{\wd0}{\box0}
-\endgroup
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/phone-income.png}\hspace{0.3cm}+19999999999
-}
-\parbox{\wd0}{\box0}\endgroup
-\\
+\section{References}
+\reference
+  {John Doe}
+  {Senior Software Developer}
+  {Tyrell Corp}
+  {john.doe@email.com}
+  {+199999999}
 \sectionsep
-\href{https://www.linkedin.com/company/john-doe/}{\textbf{Jane Doe}}, Senior Software Developer, Primatech 
-\\
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} jane.doe@email.com
-}
-\parbox{\wd0}{\box0}
-\endgroup
-\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/phone-income.png}\hspace{0.3cm}+19999999999
-}
-\parbox{\wd0}{\box0}\endgroup
-\\
+\reference
+  {Jane Doe}
+  {Senior Software Developer}
+  {Primatech}
+  {jane.doe@email.com}
+  {+199999999}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK

@@ -248,3 +248,9 @@ Last Updated on \today
 \vspace{-\topsep}\begin{itemize}[leftmargin=0.4cm]\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
+% Reference
+\newcommand{\reference}[5]{
+\textbf{#1}, #2, #3\\
+\faEnvelope \space #4\\
+\faPhone \space #5\\
+}
