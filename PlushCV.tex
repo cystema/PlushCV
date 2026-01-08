@@ -16,17 +16,16 @@
 % 
 % TODO:
 % 1. Fix bullet icon and alignment
-% 2. Fix hacky left alignment on contact line
-% 3. Remove Hacky fix for awkward extra vertical space
+% 2. Remove Hacky fix for awkward extra vertical space
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
-% 1. Used paracol to fix multiple-page flow.
+% 1. Split the header to two column format, added relevant icons to contact info.
+% 2. Used paracol to fix multiple-page flow.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%Icons:
-%%Main: https://icons8.com/icons/carbon-copy
+%%Icons: fontawesome5 package
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{plushcv}
@@ -38,13 +37,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     TITLE NAME
+%     HEADER
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.home.me}{homepage.com}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/}{li-username}}{\href{mailto:first.last@mail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
-
-% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+\header
+  {Fname}
+  {Lname}
+  {Full Stack Software Engineer}
+  {first.last@mail.com}
+  {+1 (999)999-9999}
+  {\href{https://www.github.com/sansquoi}{sansquoi}}
+  {\href{https://www.linkedin.com/}{li-username}}{Toronto, ON}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -52,7 +55,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\columnratio{0.70}
+\columnratio{\colratio}
 \begin{paracol}{2}
 
 \switchcolumn[0]

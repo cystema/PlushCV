@@ -13,7 +13,9 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
+\usepackage{adjustbox}
 \usepackage{pifont}
+\usepackage[fixed]{fontawesome5}
 \usepackage[document]{ragged2e}
 
 
@@ -159,10 +161,12 @@
 Last Updated on \today
 \end{textblock}}
 
-% Name command
+% Column split ratio
+\def \colratio {0.7}
 
-
-\newcommand{\namesection}[4]{
+% Header
+% Name section
+\newcommand{\namesection}[3]{
 \RaggedRight{
 \color{title}
 \fontsize{50pt}{60pt}
@@ -174,13 +178,36 @@ Last Updated on \today
 \vspace{-15pt}
 
 \RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{14pt}{14pt}\selectfont #3}
+}
 
-\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
+% Contact section
+\newcommand{\iconline}[2]{{\color{date}#1} \hspace{-1em} #2}
+\newcommand{\contactsection}[5]{
+\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{10pt}{14pt}\selectfont
+\begin{list}{}{\itemsep=-0.6em \leftmargin=0pt}
+\item \iconline{\faEnvelope}{\href{mailto:#1}{#1}}
+\item \iconline{\faPhone}{\href{tel:#2}{#2}}
+\item \iconline{\faGithub}{#3}
+\item \iconline{\faLinkedin}{#4}
+\item \iconline{\faMapMarker}{#5}
+\end{list}
+}
+}
 
-\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{10pt}{14pt}\selectfont #4}
+% Header command
+\newcommand{\header}[8] {
+\columnratio{\colratio}
+\begin{paracol}{2}
 
-\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
+\switchcolumn[0]
+\namesection{#1}{#2}{#3}
+
+\switchcolumn[1]
+\contactsection{#4}{#5}{#6}{#7}{#8}
+\end{paracol}
+
+\vspace{-10pt}
+{\color{date}\rule{\textwidth}{0.5pt}}
 \vspace{-15pt}
 }
 
@@ -209,16 +236,6 @@ Last Updated on \today
 % Location command
 \newcommand{\location}[1]{
 \color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1\\} \normalfont}
-
-%Contact Line
-\newcommand{\contactline}[5]{\begingroup
-\setbox0=\hbox{
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/home-simple.png}  {#1}\hspace{0.3cm}
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/github-circle.png} {#2}\hspace{0.3cm}
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/linkedin.png} {#3}\hspace{0.3cm}
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/mail.png} {#4}\hspace{0.3cm}
-\includegraphics[scale=0.5,trim={0cm 0.2cm 0cm 0cm}]{icons/main/phone-income.png} {#5}
-}\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo
 \newcommand{\vcenteredinclude}[2]{\begingroup
